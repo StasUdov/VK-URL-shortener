@@ -11,6 +11,24 @@ pip install -r requirements.txt
 ```
 
 Also, you should create file called `.env` and in it create a variable with your VK token called `VK_TOKEN`
+Example of filling the .env file:
+```
+VK_TOKEN = '123123123123123'
+```
+
+### Environment setup
+
+To get the VK_TOKEN variable from the .env file, you should to install the dotenv library.
+After that, you should import load_dotenv from dotenv:
+```
+from dotenv import load_dotenv
+```
+And finally, we import the variable with the VK token and assign it to the variable:
+```
+load_dotenv()
+token = os.getenv('VK_TOKEN')
+```
+Now, in our program there is our vk token in a variable 'token'. We need a token to make requests to the VK API.
 
 ### How to use
 
