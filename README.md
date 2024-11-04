@@ -13,7 +13,7 @@ pip install -r requirements.txt
 Also, you should create file called `.env` and in it create a variable with your VK token called `VK_TOKEN`
 Example of filling the .env file:
 ```
-VK_TOKEN = '123123123123123'
+VK_TOKEN='123123123123123'
 ```
 
 ### Environment setup
